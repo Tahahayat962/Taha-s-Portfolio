@@ -119,17 +119,10 @@ header {
 
 header .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Center the navbar content */
     align-items: center;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--text-lighter);
-}
-
-/* ====== MODERN SQUARE NAVIGATION BUTTONS ====== */
 .nav-menu {
     display: flex;
     gap: 0.8rem; /* Reduced gap for tighter layout */
@@ -137,6 +130,9 @@ header .container {
     padding: 0;
 }
 
+/* Removed the .logo styles since it's no longer needed */
+
+/* ====== MODERN SQUARE NAVIGATION BUTTONS ====== */
 .nav-item {
     list-style: none;
     background: var(--bg-darker);
@@ -195,6 +191,7 @@ header .container {
         transform: scale(1.05); /* Different hover effect for mobile */
     }
 }
+
 /* ====== HERO ====== */
 .hero {
     height: 100vh;
