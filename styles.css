@@ -738,3 +738,16 @@ a, button, input, textarea {
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(42, 95, 158, 0.3);
 }
+
+.name {
+    color: #a559de; /* Your desired color for Taha Hayat */
+}
+
+.responsive-image img {
+    width: 100%; /* Or any desired percentage */
+    height: 600px;
+    object-fit: contain; /* Optional: Maintains aspect ratio while filling the container */
+    outline: none;
+    border:none;
+    box-shadow: none;
+}
