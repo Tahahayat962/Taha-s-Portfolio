@@ -691,3 +691,53 @@ a, button, input, textarea {
         min-width: 120px;
     }
 }
+
+/* Resume Download Buttons */
+.resume-downloads {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.download-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.pdf-btn, .doc-btn {
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: 'Impact', sans-serif;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pdf-btn {
+  background: #e63946;
+  color: white;
+  border: 2px solid #e63946;
+}
+
+.doc-btn {
+  background: #2a5f9e;
+  color: white;
+  border: 2px solid #2a5f9e;
+}
+
+.pdf-btn:hover {
+  background: #c1121f;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(230, 57, 70, 0.3);
+}
+
+.doc-btn:hover {
+  background: #1a4b8c;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(42, 95, 158, 0.3);
+}
