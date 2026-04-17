@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fisheries and Oceans (DFO) Website Redesign | My Portfolio</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Fixes for case study page */
+        body {
+            padding-top: 80px; /* Match header height */
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background: var(--bg-darker);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .case-study {
+            padding-top: 2rem;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="custom-cursor"></div>
+    
+    <!-- Keep the original navigation from index.html -->
+    <header class="fade-in-up">
+        <div class="container">
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="../index.html#home">Home</a></li>
+                    <li class="nav-item"><a href="../index.html#about">About</a></li>
+                    <li class="nav-item"><a href="../index.html#portfolio">My Works</a></li>
+                    <li class="nav-item"><a href="../index.html#skills">Skills</a></li>
+                    <li class="nav-item"><a href="../index.html#contact">Contact</a></li>
+                    <li class="nav-item"><a href="../resume/resume.html">Resume</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Case study content without any header section -->
+    <main class="case-study">
+        <div class="container">
+            <!-- Project meta section -->
+            <div class="project-meta fade-in-up">
+                <div class="meta-group">
+                    <div class="meta-label">ROLE</div>
+                    <p>UX Designer, Researcher</p>
+                </div>
+                <div class="meta-group">
+                    <div class="meta-label">TECH</div>
+                    <p>Figma</p>
+                </div>
+                <div class="meta-group">
+                    <div class="meta-label">DURATION</div>
+                    <p>12 weeks</p>
+                </div>
+                <div class="meta-group">
+                    <div class="meta-label">TEAM</div>
+                    <p>4 people</p>
+                </div>
+                <div class="meta-group">
+                    <div class="meta-label">CLIENT</div>
+                    <p>Government of Canada - Fisheries and Oceans Canada (DFO)</p>
+                </div>
+            </div>
+
+            <!-- Project content sections -->
+            <section class="fade-in-up">
+                <h1>Fisheries and Oceans (DFO) Website Redesign</h1>
+                <p class="tagline">A website re-design for Fisheries and Oceans Canada (DFO).</p>
+                <img src="../images/GovWebCover.png" alt="Fisheries and Oceans Aquatic Species page">
+            </section>
+            <section>
+                <h2>Project Overview</h2>
+                <p>In this project, me and my team redesigned the Fisheries and Oceans (DFO) website, specifically focusing on 
+                    the <a href="https://www.dfo-mpo.gc.ca/species-especes/index-eng.htm">Aquatic Species page</a>. 
+                    Our client was the Fisheries and Oceans Canada (DFO), a government department responsible for
+                    safeguarding Canada's waters and managing its fisheries resources.
+                    The goal was to improve the user experience by making the information more 
+                    accessible and easier to navigate. We conducted user research, created wireframes, and developed a 
+                    new sitemap to enhance the overall usability of the website.
+                </p>
+                <h2>About the Website</h2>
+                <p>
+                    <b>Purpose of the website</b> <br>
+                    The Aquatic species section is intended to provide information about aquatic species in Canadian waters: 
+                    those that are fished, farmed, invasive, or at risk. It aims to support conservation, regulation, monitoring, 
+                    and education: giving the public, stakeholders, and decision-makers access to species profiles, risk/recovery 
+                    information, invasive species regulation, etc.
+                    <b>Target Users</b>
+                    <ul>
+                        <li>Students - to gather information for academic research</li>
+                        <li>Environmental researchers/scientists - to access the latest research and data</li>
+                        <li>Government officials/Policy makers - to make informed decisions based on the available information</li>
+                        <li>General public - to find information about aquatic species and their conservation, to report sightings</li>
+                    </ul>
+                    <b>Information needs</b><br>
+                    <ul>
+                        <li>Locating profiles on specific aquatic species.</li>
+                        <li>Reporting sightings of invasive species/incidents.</li>
+                        <li>Obtain relevant research publications.</li>
+                        <li>Identifying (invasive) species.</li>
+                    </ul>
+                </p>
+                <h2>Inventory</h2>
+                <p>First, we conducted a comprehensive inventory of the existing content and structure of the Aquatic Species page. 
+                    This involved cataloging all the pages, links, and content elements down to the 5th level of the website. 
+                    However, considering users' needs that involved high anxiety and an anomalous state of mind, this site might 
+                    not be able to support users well based on the excessive amount of information being displayed and the lack of 
+                    certain information scents in places that could help guide the users. These are the summaries of some issues 
+                    across the site:
+                    <ul>
+                        <li>Many content-heavy pages lack a table of contents section</li>
+                        <li>Unclear link name - the site uses “Aquaculture Sector Snapshot” for the “Search Aquaculture Farmed Species” page.</li>
+                        <li>Mismatch link name - the site uses “Aquaculture Science Programs” for the “Scientific research on cultured mussels” page.</li>
+                        <li>The “Aquatic species at risk” page provides many links to crucial funded programs, but the description under this page doesn't mention them.</li>
+                        <li>The contents between the “Apply for funding” and the “Grant funding” page under the Canada Nature Fund for Aquatic Species at Risk overlap and are 
+                            written differently. Also, while the application in the “Apply for funding” is closed, the other in “Grant funding” is still open.</li>
+                        <li>There are broken links located on “Commercial fisheries for Atlantic seals” and “Interesting facts - Shark Research” - pages that return error 404.</li>
+                        <li>The “Shark sighting” page has a link to a PDF (presumably to report a sighting) that requires Adobe Reader 8 or higher (however, other PDFs do not).</li>
+                    </ul>
+                    Although the site can fairly support users who have direct needs and can spare some 
+                    time navigating the site, many improvements should be made to better adapt to a wide 
+                    range of users' needs and anxiety levels. 
+                    <br><br>
+                    <a href="https://docs.google.com/spreadsheets/d/1rJGuRoSTjk8HOXUCPmklFvmYt3QPtXVcuZaNrHVAy8M/edit?usp=sharing">Link to Inventory</a>
+                </p>
+                <h2>Card Sort</h2>
+                <p>In order to better understand how users categorize and organize information, 
+                    we conducted an open card sort exercise. In this exercise, we recruited 12 
+                    participants to sort cards representing each page within our scope into categories 
+                    that make sense to them.
+                    <br><br>
+                    <b>Participants' Prior Knowledge Level</b> <br>
+                    Based on our results, we believe that some of the participants have certain prior 
+                    knowledge of the website's topic, but not all. Regarding participants with prior 
+                    knowledge, they usually grouped content-related cards with a distinct group name 
+                    that represents the overall content. While all the cards in one group are not 
+                    always strongly related, this type of participant showed their content expectation 
+                    for a label clearly. The picture below shows an example of the responses from a 
+                    participant in this category:
+                    <img src="../images/GovWebData1.png" alt="Card Sort Result for a participant with prior knowledge">
+                    For participants with no or little prior knowledge of the website, their groups' 
+                    names are more vague, the cards inside a group usually contain the same terms 
+                    (those terms in most cases are also the group's name) and might not be content-related. 
+                    The picture below shows an example of the responses from a participant in this category:
+                    <img src="../images/GovWebData2.png" alt="Card Sort Result for a participant with no prior knowledge">
+                    <b>Participants' Label Suggestions</b><br>
+                    Participants created a wide range of descriptive labels as well as topic-focused labels 
+                    that reflected how they understood and interpreted the information presented to them. 
+                    Many of the suggested labels were organized around types of animals (e.g., “Animals,” 
+                    “Fish,” “Marine Mammals,” “Shark,” “Pacific Salmon”), while others focused on issues and 
+                    actions related to conservation, such as “Conservation and Protection,” “At Risk (and 
+                    Invasive),” “Threats and Management,” and “Protection and Restoration.” There were also 
+                    several process-oriented or administrative labels like “Reporting and Regulations,” 
+                    “Government Contact Needed,” and “Funding.” Participants tended to label groups in ways 
+                    that reflected both the subject matter (specific species) and/or the type of work or 
+                    management activity associated with them, showing that users naturally think about the 
+                    content in terms of both biological categories and conservation efforts.
+                    <br><br>
+                    <b>Recommendations for Content Organization and Labelling</b><br>
+                    Based on the Categories Table and the participant group names from our card sort 
+                    results, users tended to create labels that reflect both the content type (e.g., funding, 
+                    species, research) and the purpose (e.g., protection, conservation, or monitoring). 
+                    Overall, five main labelling patterns appeared:
+                    <ul>
+                        <li><i>Program-Based Labels and Funding</i>: Many participants came up with 
+                            categories including "Government Initiatives," "Species at Risk Funds," 
+                            and "Funding Programs." These organizations typically had cards such as 
+                            the Canada Nature Fund for Aquatic Species at Risk, the Habitat Stewardship 
+                            Program for Aquatic Species at Risk, and the Aboriginal Fund for Species at Risk. 
+                            This demonstrates how users can quickly locate and arrange programmatic or 
+                            financial support-related items under a common administrative theme.</li>
+                        <li><i>Species or Animal Category Labels</i>: A number of individuals came up with 
+                            species-specific labels, including "Marine Animals," "Fish and Aquatic Life," or 
+                            "Sharks and Rays." These groups frequently included Marine Mammals, Skates and Rays, 
+                            and Shark Research. It suggests that people naturally categorize data according to 
+                            biological or ecological principles.</li>
+                        <li><i>Conservation and Protection Labels</i>: Some groups used terms like 
+                            "Conservation," "Protection Initiatives," or "Environmental Programs" to highlight 
+                            the program's goal or action. These grouped cards, like Early Detection and Monitoring 
+                            and Salmon Conservation and Protection, reflect a goal-oriented approach.</li>
+                        <li><i>Research or Data-Oriented Labels</i>: Groups were classified as "Research 
+                            Projects" or "Data and Monitoring" by a smaller subset of users. Profiles of 
+                            Farmed Species and Early Detection and Monitoring were frequently included in 
+                            these categories, indicating that some participants link material to scientific 
+                            or data-driven activities rather than subjects.</li>
+                        <li><i>General or Vague Labels (Low Domain Knowledge)</i>: Less precise names like 
+                            "Water Information," "Wildlife," or "Environmental Stuff" were frequently used 
+                            by participants who had no prior knowledge. These groups demonstrated less 
+                            familiarity with the subject matter and fewer emotional linkages between the cards.</li>
+                    </ul>
+                </p>
+                <h2>Tree Testing</h2>
+                <p>
+                    Based on the results from the content inventory and card sort, our group was able 
+                    to notice some areas where the placement or label of the information might prevent 
+                    or cause confusion to users during their information-seeking process. Therefore, 
+                    we conducted two rounds of tree tests to learn more about the users' journey within the 
+                    site and evaluate the content's labels and arrangement. The results gained from 
+                    this tree test served as guidance for the sitemap redesign.
+                    <br><br>
+                    <b>User Tasks and Aims</b><br>
+                    Among the main user tasks that we have predefined, there are two tasks that 
+                    we believe users might not experience a smooth process. We transformed those 
+                    tasks into informal scenarios to evaluate the users' journey.
+                    <ul>
+                        <li>The first task aims to see how and where users expect to find information 
+                            about the funding programs for species at risk. We provided the task 
+                            “Imagine you work with a local conservation group that wants to help protect 
+                            at-risk fish and marine species. You've heard there's government funding 
+                            available to support these kinds of projects. Where would you look to learn 
+                            how to apply?”. The correct path is starting from the “Aquatic species” page, 
+                            then going to the “Aquatic species at risk”, where three funding programs are 
+                            presented. We chose to include only one program in the tree as a representative 
+                            for these programs, so users would have only one designated destination. With 
+                            this task, we hope to gain evidence to prove that the main page lacks sufficient 
+                            clues guiding users to find these funding programs, and also to see the real 
+                            steps users take to gain the information.</li>
+                            <li>The second task aims to see how and where users expect to find the gate to 
+                                report a species sighting or incidents. We provided the task “You are 
+                                helping a friend who spotted a large marine animal stranded near the shore. 
+                                Find out where you can report such a sighting and learn what kind of 
+                                official response happens”. The correct path is starting from the “Aquatic 
+                                species” page, going to the “Marine mammals”, and choosing “Report a sighting 
+                                or incident”.  With this task, we hope to evaluate whether the existing 
+                                label provides sufficient clues to help users choose the right path in this 
+                                high-anxiety situation.</li>
+                    </ul>
+                    <b>First Tree Test Analysis</b><br>
+                    <i>Task 1: Finding Funding Programs</i><br>
+                    For task one in the first tree test, 66.7% of responses were correct, with four 
+                    people getting to the answer directly and two indirectly. Most of the participants 
+                    who got to the correct answer chose the shortest path (Home, Aquatic species at 
+                    risk, Canada Nature Fund for Aquatic Species at Risk, Apply for funding).
+                    <img src="../images/GovWebData3.png" alt="Participants who did not take the shortest route">
+                    As seen in the above screenshot, some participants were unsure about their choices, 
+                    so they went back and forth between different pages until they either got to the 
+                    correct or incorrect answer.
+                    <br><br>
+                    <i>Task 2: Reporting a Species Sighting or Incident</i><br>
+                    For task two, again 66.7% of participants were correct, 
+                    although this time only two people got to the answer directly, and four got to it 
+                    indirectly, there were eight unique paths that the participants took to get to their 
+                    answer. Their first stop was usually either “Marine Mammals”, “Aquatic Species at 
+                    Risk”, or “Aquatic Invasive Species”. From there onwards, most participants appeared 
+                    confident when picking their answer.
+                    <img src="../images/GovWebData5.png" alt="Participants who took different paths to find the answer">
+                    One of the participants struggled to find the answer and kept looking at different 
+                    pages until they eventually found the answer. This shows that for some people, the 
+                    location of the page “Report a Sighting or Incidence” was not clear until they 
+                    clicked around.
+                    <img src="../images/GovWebData4.png" alt="Participant who was unsure about what to click">
+                    <b>Second Tree Test Analysis</b><br>
+                    For the second tree test, “Aquatic Species at Risk” was changed to “Aquatic Species 
+                    at Risk & Funding Programs”, and “Marine Mammals” was changed to “Marine Mammals 
+                    & Incidents”. This was so that for each respective task, the participants would not 
+                    be confused as to where to find their answer, reducing back-and-forth navigation. 
+                    Average time taken to complete task one and task two went from 38.5 seconds and 40.6 
+                    seconds respectively in the first tree test, to 24.7 seconds and 15.9 seconds in 
+                    the second tree test. This tells us that our changes gave participants more clarity 
+                    regarding where to go. <br><br>
+                    <i>Task 1: Finding Funding Programs</i><br>
+                    For task one in the second tree test, 70% of participants were correct, with five 
+                    getting to the answer directly and two indirectly, most of the participants who got 
+                    to the correct answer also took the shortest path (Home, Aquatic Species At Risk & 
+                    Funding Programs, Canada Nature Fund for Aquatic Species at Risk, Apply for funding).
+                    <img src="../images/GovWebData6.png" alt="One participant who was confused">
+                    As seen above, one of the participants in this tree test appeared confused and 
+                    navigated to the “Permit application” section, this appears to be due to the wording
+                    of our task. The wording, especially towards the end, might have caused the 
+                    participant to be confused, and assumed that they needed to learn about permit 
+                    application processes. <br><br>
+                    <i>Task 2: Reporting a Species Sighting or Incident</i><br>
+                    For task two in the second tree test, 70% of participants were correct with all of 
+                    them getting to the answer directly, all of the participants who got to the correct 
+                    answer also took the shortest path (Home, Marine Mammals & Incidents, Report a 
+                    Sighting or Incidence).
+                    <img src="../images/GovWebData7.png" alt="One confused participant">
+                    One of the participants who gave an incorrect response appeared confused, similar 
+                    to what happened in task one. Our second task did not specify that the marine animal 
+                    was non-invasive, thus confusing the participant and causing them to click on 
+                    “Aquatic Invasive Species”.
+                </p>
+                <h2>Sitemap Redesign</h2>
+                <p>
+                    Based on the results of the card sort and the tree tests, the group decided to 
+                    propose some changes to the structure of the site. Below is the sitemap representing 
+                    the high-level structure after alterations are made. Refer to the “Notes” and 
+                    “Legend” sections to understand the meanings of the terms and symbols used in the 
+                    sitemap. 
+                    <img src="../images/GovWebSitemap.png" alt="Sitemap Redesign">
+                    <h3>Principal Wireframes</h3>
+                    Based on these tests and feedback, we implemented changes to the structure and 
+                    visual hierarchy of the website. In order to visualize the changes created the 
+                    following eight wireframes we intend to make based on user feedback and both our 
+                    card sort and tree tests. 
+                    <br><br>
+                    <b>Level 1</b>
+                    <img src="../images/GovWebWireframe1.png" alt="Wireframe for the homepage">
+                    On the home page, we moved the breadcrumbs next to the menu instead of under it. 
+                    This will allow users to find it more easily as the menu is one of the first things 
+                    they will notice, and the navigation guide is within their line of sight. Another 
+                    reason is that when the user opens the menu dropdown, the navigation breadcrumbs 
+                    get covered by the menu. This ensures that it does not get hidden when users want 
+                    to open the menu, making it more visible. We also removed descriptions under 
+                    headings and instead added a hover menu (shown below). This means that the users 
+                    will not be overwhelmed with a large amount of text. Additionally, we added 
+                    “Report and Incident” based on our tree test results, as users were unsure of 
+                    where to go when wanting to report an incident.
+                    <br><br>
+                    <b>Level 1 Hover Menu</b>
+                    <img src="../images/GovWebWireframe2.png" alt="Hover menu for the homepage">
+                    The hover menu replaces the descriptions that were found underneath the headings 
+                    previously. This can be done by hovering over the heading with the cursor. This allows 
+                    users to choose what information they want to see, and allows for the headings to stand out. 
+                    <br><br>
+                    <b>Level 2</b>
+                    <img src="../images/GovWebWireframe3.png" alt="Wireframe for the level 2 page">
+                    Our level 2 design also follows our level 1 design, we again removed descriptions and instead 
+                    aimed to implement a hover menu feature. For this heading, we also decided to add “Funding Programs” 
+                    to the heading as it gives users more clarity regarding what is provided under the heading, and it 
+                    also prevents users from getting lost or frustrated while trying to find funding programs.
+                    <br><br>
+                    <b>Level 3</b>
+                    <img src="../images/GovWebWireframe4.png" alt="Wireframe for the level 3 page">
+                    On our level 3 redesign makes some visible changes to the design of this page, we changed the heading 
+                    to just “Permit application” as the previous heading “Permitting under the Species at Risk Act” 
+                    may be too technical for some users or confuse/intimidate them in other ways and we also moved the 
+                    “On this page” menu to the right-hand side in order to streamline the users experience when navigating 
+                    the page and provided information.
+                    <br><br>
+                    <b>Level 4</b>
+                    <img src="../images/GovWebWireframe5.png" alt="Wireframe for the level 4 page">
+                    In our level 4 redesign, we chose to change the design of the public registry menu. The previous menu 
+                    listed information below based on which heading was selected, this could have confused users, as they 
+                    may not immediately know that they need to scroll down to see their desired information. Therefore, we 
+                    added a menu with headings similar to the homepage and other levels. This will allow users to click on 
+                    the heading they want to and see the desired information on a separate page. 
+                    <br><br>
+                    <b>Level 5</b>
+                    <img src="../images/GovWebWireframe6.png" alt="Wireframe for the level 5 page">
+                    On our level 5 redesign, we decided to change the traditional structure of headings and descriptions to 
+                    a dropdown menu design instead. We believe that this change was necessary as the information provided 
+                    here is relevant to each other, and having to go back and forth between pages may frustrate users. The 
+                    drop-down menu will instead allow them to stay on the same page while still being able to access the provided 
+                    information.
+                    <br><br>
+                    <b>Search Function</b>
+                    <img src="../images/GovWebWireframe7.png" alt="Wireframe for the search function">
+                    For the search page, we made many changes in order to simplify the overall experience. We found the original 
+                    filtering function to be both confusing and limited in functionality. We re-designed it to be simpler and 
+                    minimalistic while improving functionality. We did this by adding a large search bar right below the heading, 
+                    making “Province/Territory” and “Region” the first filters users see. Additionally, we added an “Advanced search” 
+                    function that will be explained in the section below.
+                    <br><br>
+                    <b>Advanced Search Function</b>
+                    <img src="../images/GovWebWireframe8.png" alt="Wireframe for the advanced search function">
+                    We added an “Advanced search” function below the two main filters for users who want more information. The 
+                    “Advanced search” button opens up three dropdown menus:
+                    <ul>
+                        <li>The first one allows users to sort species by Species Group, which is a parameter not included in the original search page.</li>
+                        <li>The second one allows users to sort the species by their SARA status.</li>
+                        <li>The third one allows users to sort them by their COSEWIC status.</li>
+                    </ul>
+                    <h3>Recommendations for The Site's Restructure</h3>
+                    Based on our content inventory, open card sort, and two rounds of tree testing, the Aquatic Species section 
+                    should be restructured to better match users' mental models and reduce the confusion observed in testing. 
+                    Users consistently organized content either by species or by program/action, and the new structure reflects that. 
+                    All examples referenced below correspond to the provided wireframes.
+                    <ol>
+                        <li><h4>Navigation Recommendations</h4>
+                        <b>Global Navigation</b> <br>
+                        Users expect clear divisions between species information and program information. The revised global navigation 
+                        (Level 1 wireframe) includes the following top-level categories:
+                        <ul>
+                            <li>Aquatic Species</li>
+                            <li>Aquatic Species at Risk & Funding Programs</li>
+                            <li>Marine Mammals & Incidents</li>
+                            <li>Aquatic Invasive Species</li>
+                            <li>Pacific Salmon</li>
+                            <li>Publications</li>
+                        </ul>
+                        This structure addresses the wandering seen in the first tree test, where participants moved across unrelated 
+                        sections while attempting simple tasks (e.g., locating funding).
+                        <br><br>
+                        <b>Local Navigation</b><br>
+                        Local navigation on secondary pages (Levels 2-3) makes key tasks immediately visible:
+                        <ul>
+                            <li>Apply for Funding</li>
+                            <li>Report an Incident</li>
+                            <li>Determine if You Need Approval</li>
+                            <li>Recovery Planning</li>
+                            <li>Species Profiles</li>
+                        </ul>
+                        Tree testing showed these tasks were repeatedly missed or misinterpreted. Making them prominent 
+                        reduces drift and improves completion rates.
+                        <br><br>
+                        <b>Contextual Navigation</b> <br>
+                        Contextual links appear in sidebars and “On This Page” modules, pointing to related resources such 
+                        as maps, required documents, and regional contacts. Card-sort results showed users expect species 
+                        content and related actions to appear together, making contextual links essential.
+                        <br><br>
+                        <b>Utility Navigation & Breadcrumbs</b><br>
+                        Utility elements (search bar, language toggle, Government of Canada branding) appear at the top of each template. 
+                        Breadcrumbs were kept because users can easily get lost in sites like this one, with many levels and branches 
+                        in the hierarchy. They provide constant orientation and support backtracking without restarting.
+                    </li>
+                    <li>
+                        <h4>Search System Recommendations</h4>
+                        <b>Global Search</b><br>
+                        To improve searchability, we recommend:
+                        <ul>
+                            <li>Autocomplete for species</li>
+                            <li>Spell-tolerant matching</li>
+                            <li>Filters for region, species status, invasiveness, and content type</li>
+                        </ul>
+                        Testing showed users relied heavily on search-like behaviour, even within navigation tasks.
+                        <br><br>
+                        <b>Species-specific Search</b><br>
+                        A dedicated species search page (Search Function wireframe) includes:
+                        <ul>
+                            <li>Filters for conservation status, invasiveness, region, and species category</li>
+                            <li>Results displayed as species cards</li>
+                            <li>A final species profile page with related actions and documents</li>
+                        </ul>
+                        This separation reflects users' expectations that species data and program information remain distinct. 
+                        The wireframes illustrate the full search flow: search form → results page → species detail page.
+                    </li>
+                    <li>
+                        <h4>Metadata & Controlled Vocabulary Recommendations</h4>
+                        <b>Dublin Core (Administrative Content)</b><br>
+                        Used for funding programs, regulations, permits, and educational pages. Matches Government of Canada 
+                        metadata standards and supports consistent labelling across general content. <br><br>
+                        <b>Darwin Core (Species Content)</b><br>
+                        The international biodiversity metadata standard, ideal for species profiles, invasive species, sightings, 
+                        and habitat information. Relevant fields include:
+                        <ul>
+                            <li>scientificName</li>
+                            <li>taxonRank</li>
+                            <li>occurrenceStatus</li>
+                            <li>habitat</li>
+                            <li>waterBody</li>
+                            <li>eventDate / individualCount</li>
+                        </ul>
+                        The Darwin Core also supports integration with ITIS, WoRMS, GBIF, and OBIS, enabling accurate filtering and scientific consistency.
+                        <br><br>
+                        <b>Controlled Vocabularies & AI Tagging</b><br>
+                        Recommended vocabularies: ITIS, WoRMS, and Environment Canada subject thesaurus. Optional AI-assisted tagging can speed up metadata creation, with human review ensuring accuracy.
+                    </li>
+                </ol>
+                <h2>Conclusion</h2>
+                The proposed structure reflects the patterns observed in user research and improves clarity across navigation, search, 
+                and metadata. By implementing this model, the Aquatic Species section becomes easier to navigate, more accurate, and 
+                better aligned with both public users and scientific needs.
+            </p>
+        </section>
+
+        <!-- Back button -->
+        <div class="fade-in-up" style="text-align: center; margin-top: 3rem;">
+            <a href="../index.html#portfolio" class="btn">
+                <i class="fas fa-arrow-left"></i> Back to Home
+                        </ul>
+                        </li>
+                    </ol>
+                </p>
+            </section>
+ 
+            <!-- Back button -->
+            <div class="fade-in-up" style="text-align: center; margin-top: 3rem;">
+                <a href="../index.html#portfolio" class="btn">
+                    <i class="fas fa-arrow-left"></i> Back to Home
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="fade-in-up">
+        <div class="container">
+            <p>&copy; 2026 Taha Hayat's Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

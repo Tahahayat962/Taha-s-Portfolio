@@ -1,3 +1,10 @@
+/* ====== GOOGLE FONTS ====== */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* ====== CURSOR RULE ====== */
+*, *::before, *::after {
+    cursor: none !important;
+}
 /* ====== GLOBAL STYLES ====== */
 :root {
     --bg-dark: #121212;
@@ -8,7 +15,7 @@
     --gray-2: #2a2a2a;
     --gray-3: #3d3d3d;
     --accent-purple: #29124e; /* Only used in nav/highlight */
-    --accent-purple-dark: #a332c5; /* Only used in nav hover */
+    --accent-purple-dark: #af55ca; /* Only used in nav hover */
     --section-border-width: 90%;
     --section-border-fade: 10%;
 }
@@ -20,7 +27,7 @@
 }
 
 body {
-    font-family: 'Noto Serif', Georgia, serif;
+    font-family: 'IBM Plex Sans';
     line-height: 1.7;
     color: var(--text-light);
     background-color: var(--bg-dark);
@@ -34,10 +41,21 @@ body {
     padding: 0 20px;
 }
 
+/* ====== HYPERLINKS ====== */
+a {
+    color: var(--accent-purple-dark);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent-purple);
+}
+
 /* ====== TYPOGRAPHY ====== */
 /* ====== FIXED HEADING STYLES ====== */
 h1, h2, h3, h4 {
-    font-family: 'Impact', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Arial Black';
     font-weight: normal;
     letter-spacing: 1px;
     color: var(--text-lighter);
@@ -47,7 +65,7 @@ h1, h2, h3, h4 {
 /* Specific heading styles */
 h1 {
     font-size: 3rem;
-    text-align: center;
+    text-align: left;
     margin: 3rem 0;
 }
 
@@ -143,7 +161,7 @@ header .container {
 }
 
 .nav-item a {
-    font-family: 'Impact', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Arial Black';
     color: var(--text-lighter);
     text-decoration: none;
     font-size: 1.1rem;
@@ -197,7 +215,7 @@ header .container {
     height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/background.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/BackgroundCover.png') no-repeat center center/cover;
     color: white;
     text-align: center;
     padding-top: 80px;
@@ -216,6 +234,7 @@ header .container {
     box-shadow: none;
     opacity: 1;
     transform: none;
+    text-align: center;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
@@ -268,6 +287,7 @@ header .container {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
     background: var(--gray-2);
+    aspect-ratio: 1;
 }
 
 .portfolio-item:hover {
@@ -353,7 +373,7 @@ header .container {
     color: var(--text-lighter);
     margin: 0 0 1rem 0;
     text-align: center;
-    font-family: 'Impact', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Arial Black';
 }
 
 .skill-category ul {
@@ -510,7 +530,7 @@ section:last-child::after {
 .custom-cursor::before {
     content: "+";
     font-size: 24px;
-    font-weight: bold;
+    font-weight: bolder;
     color: orange;
     position: absolute;
 }
@@ -570,7 +590,7 @@ a, button, input, textarea {
 }
 
 .case-study h1 {
-    font-family: 'Impact', sans-serif;
+    font-family: 'Arial Black';
     font-size: clamp(2.5rem, 5vw, 3.5rem);
     margin-bottom: 1.5rem;
     color: var(--text-lighter);
@@ -602,7 +622,7 @@ a, button, input, textarea {
 }
 
 .meta-label {
-    font-family: 'Impact', sans-serif;
+    font-family: 'Arial Black';
     color: var(--text-light);
     margin-bottom: 0.5rem;
     font-size: 0.9rem;
@@ -622,7 +642,7 @@ a, button, input, textarea {
 }
 
 .case-study h2 {
-    font-family: 'Impact', sans-serif;
+    font-family: 'Arial Black';
     font-size: 2rem;
     color: var(--text-lighter);
     margin: 3rem 0 1.5rem;
@@ -707,7 +727,7 @@ a, button, input, textarea {
   padding: 12px 25px;
   border-radius: 5px;
   text-decoration: none;
-  font-family: 'Impact', sans-serif;
+  font-family: 'Arial Black';
   letter-spacing: 1px;
   transition: all 0.3s ease;
   display: inline-flex;

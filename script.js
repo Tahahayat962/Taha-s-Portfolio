@@ -53,6 +53,8 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         animatedElements.forEach(element => observer.observe(element));
+        // Force show on load for fade-in
+        animatedElements.forEach(element => element.classList.add("show"));
     } else {
         console.warn("No elements with .fade-in-up found");
     }

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Workout Buddy | My Portfolio</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Fixes for case study page */
+        body {
+            padding-top: 80px; /* Match header height */
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background: var(--bg-darker);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .case-study {
+            padding-top: 2rem;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="custom-cursor"></div>
+    
+    <!-- Keep the original navigation from index.html -->
+    <header class="fade-in-up">
+        <div class="container">
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="../index.html#home">Home</a></li>
+                    <li class="nav-item"><a href="../index.html#about">About</a></li>
+                    <li class="nav-item"><a href="../index.html#portfolio">My Works</a></li>
+                    <li class="nav-item"><a href="../index.html#skills">Skills</a></li>
+                    <li class="nav-item"><a href="../index.html#contact">Contact</a></li>
+                    <li class="nav-item"><a href="../resume/resume.html">Resume</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Case study content without any header section -->
+    <main class="case-study">
+        <div class="container">
+            <!-- Project meta section -->
+            <div class="project-meta fade-in-up">
+                <div class="meta-group">
+                    <div class="meta-label">ROLE</div>
+                    <p>UX Researcher & Designer</p>
+                </div>
+                <div class="meta-group">
+                    <div class="meta-label">TECH</div>
+                    <p>Figma</p>
+                </div>
+                <div class="meta-group">
+                    <div class="meta-label">DURATION</div>
+                    <p>12 weeks</p>
+                </div>
+                <div class="meta-group">
+                    <div class="meta-label">TEAM</div>
+                    <p>6 people</p>
+                </div>
+            </div>
+
+            <!-- Project content sections -->
+            <section class="fade-in-up">
+                <h1>My Workout Buddy</h1>
+                <p class="tagline">A concept for a fitness app.</p>
+                <img src="../images/MWBLogo.png" alt="My Workout Buddy app logo">
+            </section>
+            <section>
+                <h2>Project Overview</h2>
+                <p>My Workout Buddy is a fitness app designed to help users track their workouts, s
+                    et fitness goals, and stay motivated. The app provides personalized workout plans, 
+                    progress tracking, and social features to connect with friends. This app concept was developed
+                    by a team of 6 members over 12 weeks. First we took a look at what issues existed, we chose 
+                    to pursue a fitness app because it's a commonly used app, and many existing fitness apps 
+                    don't have some features that we'd like it to. </p>
+                <h2>Ideation</h2>
+                <p>Over the first 5-6 weeks, we brainstormed ideas and discussed the feasibility of each concept. 
+                    We decided on a sleek, modern, and user-friendly design for the app, with a focus on familiarity
+                     and ease of use. We wanted to create an app that would be intuitive for users of all fitness and 
+                     tech levels. To understand the needs and pain points of potential users, we came up with 3 tasks that 
+                     a user will have to complete in the app, and made a low fidelity prototype to test the tasks. We then 
+                     conducted user research where the participants would do the task on our high-fidelity prototype. 
+                     <br> <br>
+                     <b>The Tasks</b>
+                     <br>
+                     <ul>
+                        <li>Task 1: The user is onboarding; they create an account, input their physical attributes as well 
+                            as their desired goals.
+                        </li>
+                        <li>Task 2: The user works with the app to develop a personalized workout plan for a specific muscle 
+                            group (or multiple, depending on their needs).
+                        </li>
+                        <li>Task 3: The user logs their workout sets/reps and amount of weight to track their progress overtime.</li>
+                     </ul>
+                </p>
+                <h2>User Research</h2>
+                <p>To understand the needs and pain points of potential users, we conducted surveys and usability tests. 
+                    We gathered feedback on our high fideilty prototype and used it to make improvements to the final design. 
+                    These are the feedback we gathered on each task from the user research:
+                    <ul>
+                        <li>Task 1:</li>
+                        <ul>
+                            <li>Users felt the onboarding process was helpful and mostly intuitive.</li>
+                            <li>Some of the labels and color choices cause confusion.</li>
+                            <li>Overall, an effective process but has potential to cause confusion or frustration without support.</li>
+                        </ul>
+                        <li>Task 2:</li>
+                        <ul>
+                            <li>Participants found the presets to be helpful, especially beginners.</li>
+                            <li>Having access to predefined lists of exercises was very useful, videos and demos help users feel comfortable.</li>
+                            <li>There was some confusion with the filtering system and structure of the preset pages.</li>
+                        </ul>
+                        <li>Task 3:</li>
+                        <ul>
+                            <li>Users appreciated how the system takes you step by step to track your workout, so you 
+                                do not miss anything
+                            </li>
+                            <li>Users like the option to rate your workout and write notes based on your experience</li>
+                            <li>One user thought the workout history section was very clear but basic</li>
+                            <li>Users thought having a confirmation screen after tracking your workout was helpful</li>
+                        </ul>
+                    </ul>
+                </p>
+                <h2>Low Fidelity Prototype</h2>
+                <p>Task 1:</p>
+                <img src="../images/MWBLofi1.png" alt="My Workout Buddy lo-fi prototype for task 1">
+                <p>Task 2:</p>
+                <img src="../images/MWBLofi2.png" alt="My Workout Buddy lo-fi prototype for task 2">
+                <p>Task 3:</p>
+                <img src="../images/MWBLofi3.png" alt="My Workout Buddy lo-fi prototype for task 3">
+                <h2>Final Prototype</h2>
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/UPrbv9gm9pGtgioo3xoyMO/Group-7-Task-Flow-Chart?node-id=773-141&p=f&viewport=326%2C85%2C0.14&scaling=scale-down&content-scaling=fixed&starting-point-node-id=773%3A141&page-id=773%3A125&embed-host=share" allowfullscreen></iframe>
+            </section>
+ 
+            <!-- Back button -->
+            <div class="fade-in-up" style="text-align: center; margin-top: 3rem;">
+                <a href="../index.html#portfolio" class="btn">
+                    <i class="fas fa-arrow-left"></i> Back to Home
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="fade-in-up">
+        <div class="container">
+            <p>&copy; 2026 Taha Hayat's Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
