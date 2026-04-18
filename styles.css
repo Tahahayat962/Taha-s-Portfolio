@@ -1,5 +1,6 @@
 /* ====== GOOGLE FONTS ====== */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
 /* ====== CURSOR RULE ====== */
 *, *::before, *::after {
@@ -55,7 +56,7 @@ a:hover {
 /* ====== TYPOGRAPHY ====== */
 /* ====== FIXED HEADING STYLES ====== */
 h1, h2, h3, h4 {
-    font-family: 'Arial Black';
+    font-family: 'Archivo Black', sans-serif;
     font-weight: normal;
     letter-spacing: 1px;
     color: var(--text-lighter);
@@ -71,8 +72,6 @@ h1 {
 
 h2 {
     font-size: 2rem;
-    border-left: 8px solid var(--gray-3);
-    padding-left: 1rem;
     margin: 2.5rem 0 1.5rem;
 }
 
@@ -96,33 +95,10 @@ h4.animate {
     transform: none;
 }
 /* Page-like borders for headings */
-h2::before,
-h2::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(90deg, 
-        transparent 0%, 
-        var(--gray-3) var(--section-border-fade), 
-        var(--gray-3) calc(100% - var(--section-border-fade)), 
-        transparent 100%);
-}
-
-h2::before {
-    top: 0;
-}
-
-h2::after {
-    bottom: 0;
-}
-
 /* Animated state when visible */
 h2.animate {
     opacity: 1;
     transform: perspective(1000px) rotateX(0) translateY(0);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2); /* Changed from purple */
 }
 
 /* ====== HEADER ====== */
@@ -161,7 +137,7 @@ header .container {
 }
 
 .nav-item a {
-    font-family: 'Arial Black';
+    font-family: 'Archivo Black', sans-serif;
     color: var(--text-lighter);
     text-decoration: none;
     font-size: 1.1rem;
@@ -373,7 +349,7 @@ header .container {
     color: var(--text-lighter);
     margin: 0 0 1rem 0;
     text-align: center;
-    font-family: 'Arial Black';
+    font-family: 'Archivo Black', sans-serif;
 }
 
 .skill-category ul {
@@ -473,7 +449,7 @@ footer {
     color: white;
     text-align: center;
     padding: 2rem 0;
-    border-top: 1px solid var(--gray-3); /* Changed from purple */
+    border-top: none;
 }
 
 /* ====== SECTION BORDERS ====== */
@@ -489,10 +465,10 @@ section::after {
     left: calc((100% - var(--section-border-width)) / 2);
     width: var(--section-border-width);
     height: 1px;
-    background: linear-gradient(90deg, 
-        transparent 0%, 
-        var(--gray-3) var(--section-border-fade), 
-        var(--gray-3) calc(100% - var(--section-border-fade)), 
+    background: linear-gradient(90deg,
+        transparent 0%,
+        var(--gray-3) var(--section-border-fade),
+        var(--gray-3) calc(100% - var(--section-border-fade)),
         transparent 100%);
 }
 
@@ -586,11 +562,11 @@ a, button, input, textarea {
 .case-study-header {
     margin-bottom: 4rem;
     padding-bottom: 2rem;
-    border-bottom: 1px solid var(--gray-3);
+    border-bottom: none;
 }
 
 .case-study h1 {
-    font-family: 'Arial Black';
+    font-family: 'Archivo Black', sans-serif;
     font-size: clamp(2.5rem, 5vw, 3.5rem);
     margin-bottom: 1.5rem;
     color: var(--text-lighter);
@@ -622,7 +598,7 @@ a, button, input, textarea {
 }
 
 .meta-label {
-    font-family: 'Arial Black';
+    font-family: 'Archivo Black', sans-serif;
     color: var(--text-light);
     margin-bottom: 0.5rem;
     font-size: 0.9rem;
@@ -642,7 +618,7 @@ a, button, input, textarea {
 }
 
 .case-study h2 {
-    font-family: 'Arial Black';
+    font-family: 'Archivo Black', sans-serif;
     font-size: 2rem;
     color: var(--text-lighter);
     margin: 3rem 0 1.5rem;
@@ -727,7 +703,7 @@ a, button, input, textarea {
   padding: 12px 25px;
   border-radius: 5px;
   text-decoration: none;
-  font-family: 'Arial Black';
+  font-family: 'Archivo Black', sans-serif;
   letter-spacing: 1px;
   transition: all 0.3s ease;
   display: inline-flex;
